@@ -30,7 +30,7 @@ namespace RazorPagesTest
 
 			services.Configure<RazorViewEngineOptions>(options =>
 			{
-				options.FileProviders.Add(new EmbeddedFileProvider(Assembly.Load("RazorPagesTestViews")));
+				options.FileProviders.Add(new MyEmbeddedFileProvider(Assembly.Load("RazorPagesTestViews")));
 			});
 		}
 

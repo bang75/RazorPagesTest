@@ -6,14 +6,10 @@
 
   <ItemGroup>
     <None Remove="Index.cshtml" />
-    <None Remove="Pages\Index.cshtml" />
     <None Remove="Test.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Index.cshtml">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pages\Test.cshtml" />
   </ItemGroup>
 
@@ -23,6 +19,12 @@
 
   <ItemGroup>
     <UpToDateCheckInput Include="Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Pages\Index.cshtml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
